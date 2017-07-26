@@ -14,5 +14,5 @@ class AddressbookDB:
                 result.append(Group (id = row["group_id"], name = row["group_name"], header = row["group_header"], footer = row["group_footer"]))
         return result
 
-def close(self):
-    self.connection.close()
+    def close(self):
+        self.connection.close()

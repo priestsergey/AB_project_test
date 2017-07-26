@@ -35,7 +35,7 @@ def init_login(app,config):
    if not app.session.is_logged():
        app.session.login(config["web"]["username"], config["web"]["password"])
    yield
-   app.session.Logout()\
+   app.session.Logout()
 
 @pytest.fixture()
 def init_groups(app):
